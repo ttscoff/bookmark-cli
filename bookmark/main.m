@@ -13,7 +13,7 @@
 
 int main(int argc, const char *argv[]) {
   if (argc != 3) {
-    fprintf(stderr, "Invalid number of argument\n");
+    fprintf(stderr, "Invalid number of arguments\n");
     fprintf(stderr, "Get bookmark for file: %s save filename\n"
                     "Find file with bookmark: %s find (bookmark data)\n",
             argv[0], argv[0]);
@@ -74,8 +74,8 @@ int main(int argc, const char *argv[]) {
       }
     } else {
       fprintf(stderr, "Invalid argument\n");
-      fprintf(stderr, "Get bookmark for file: bookmark save filename\nFind "
-                      "file with bookmark: bookmark find (bookmark data)\n");
+      fprintf(stderr, "Get bookmark for file: bookmark save filename\n"
+                      "Find file with bookmark: bookmark find (bookmark data)\n");
       return 1;
     }
   }
