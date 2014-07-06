@@ -6,7 +6,8 @@ This is an extremely simple tool for use in shell scripting. It allows you to co
 
 example:
 
-    BOOKMARK=bookmark save filename.ext
-    bookmark find "$BOOKMARK"
+    $ BOOKMARK=$(bookmark save filename.ext)
+    $ mv filename.ext filename.bak
+    $ bookmark find "$BOOKMARK"
 
 In a script, capture the response of `bookmark save ...` and save it instead of a filename in an object and be able to restore it no matter where it goes. Within reason, of course.
